@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sheldon Cooper — Fan Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-theme="dark">
+  <!-- Sticky Navbar -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo">SC</div>
+        <div class="brand-text">
+          <div class="brand-name">Sheldon Cooper</div>
+          <div class="brand-sub">Fan Resume • One-page</div>
+        </div>
+      </div>
+
+      <nav class="links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#flags">Fun with Flags</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn" id="btnTheme" title="Toggle theme">Theme</button>
+        <button class="btn primary" id="btnPrint" title="Print / Save as PDF">Print</button>
+        <button class="btn warn" id="btnBazinga" title="Bazinga">Bazinga</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- LEFT SIDEBAR -->
+    <aside class="card sidebar">
+      <div class="profile">
+        <img class="avatar" src="images/sheldon1.jpg" alt="Sheldon" onerror="this.style.display='none'; document.getElementById('fallbackAvatar').style.display='grid';" />
+        <div class="avatar-fallback" id="fallbackAvatar">SC</div>
+
+        <div>
+          <div class="name">Sheldon Cooper</div>
+          <div class="role">Theoretical Physicist • Caltech</div>
+          <div class="pills">
+            <span class="pill">IQ: 187</span>
+            <span class="pill">String Theory</span>
+            <span class="pill">“My Spot”</span>
+            <span class="pill">Roommate Agreement</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <h3>Skills</h3>
+
+        <div class="skill">
+          <div class="skill-top"><span>Physics</span><span class="muted">99%</span></div>
+          <div class="bar"><div class="fill" data-fill="99"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top"><span>Logic</span><span class="muted">96%</span></div>
+          <div class="bar"><div class="fill" data-fill="96"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top"><span>Teamwork</span><span class="muted">22%</span></div>
+          <div class="bar"><div class="fill" data-fill="22"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top"><span>Empathy</span><span class="muted">18%</span></div>
+          <div class="bar"><div class="fill" data-fill="18"></div></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Random Quote</h3>
+        <div class="quote" id="quoteBox">
+          “I’m not insane. My mother had me tested.”
+          <div class="by">— Sheldon Cooper</div>
+        </div>
+        <div class="row">
+          <button class="btn" id="btnQuote">New quote</button>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <h3>Contact</h3>
+        <div class="kv"><span class="muted">Email:</span> <span>sheldon@caltech.edu</span></div>
+        <div class="kv"><span class="muted">Location:</span> <span>Pasadena, CA</span></div>
+        <div class="kv"><span class="muted">LinkedIn:</span> <span>/in/sheldon-cooper</span></div>
+      </section>
+
+      <div class="note">
+        Fan-made practice project. Swap with your real resume later.
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <!-- ABOUT -->
+      <section class="card section-block reveal" id="about">
+        <h2>About</h2>
+        <p class="muted">
+          A resume-style fan page. Serious layout, hilarious content. (Bazinga.)
+        </p>
+        <div class="grid2">
+          <div class="tile">
+            <h4>Summary</h4>
+            <ul>
+              <li>Theoretical physicist with a passion for elegant proofs.</li>
+              <li>Operates on schedules, protocols, and strict seating arrangements.</li>
+              <li>High accuracy, low tolerance for incorrect statements.</li>
+            </ul>
+          </div>
+          <div class="tile">
+            <h4>Highlights</h4>
+            <ul>
+              <li>Ph.D. (timeline: classified)</li>
+              <li>Contract negotiation: expert level</li>
+              <li>Whiteboard dominance</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="card section-block reveal" id="experience">
+        <h2>Experience</h2>
+
+        <div class="timeline">
+          <div class="job">
+            <div class="job-head">
+              <div>
+                <h4>Senior Theoretical Physicist — Caltech</h4>
+                <div class="muted">Pasadena • 2007 – Present</div>
+              </div>
+              <span class="tag">Full-time</span>
+            </div>
+            <ul>
+              <li>Research: string theory, quantum mechanics, and party-ruining facts.</li>
+              <li>Maintained a legally-binding roommate agreement (v3.0).</li>
+              <li>Delivered lectures with unmatched “actually” energy.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-head">
+              <div>
+                <h4>Visiting Lecturer — Anywhere That Will Listen</h4>
+                <div class="muted">Various • Ongoing</div>
+              </div>
+              <span class="tag">Guest</span>
+            </div>
+            <ul>
+              <li>Explained why people are wrong, using footnotes.</li>
+              <li>Promoted scientific temperament and precise terminology.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FUN WITH FLAGS -->
+      <section class="card section-block reveal" id="flags">
+        <div class="flags-head">
+          <div>
+            <h2>Fun with Flags</h2>
+            <p class="muted">
+              Choose a country. See the flag + a fun mini fact. (Fan tribute section)
+            </p>
+          </div>
+          <img class="flags-banner" src="images/funwithflags.jpg" alt="Fun with Flags" onerror="this.style.display='none';" />
+        </div>
+
+        <div class="flags-grid">
+          <div class="tile">
+            <h4>Pick a Flag</h4>
+
+            <div class="row">
+              <select id="flagSelect" class="select">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="france">France</option>
+                <option value="japan">Japan</option>
+                <option value="brazil">Brazil</option>
+              </select>
+
+              <button class="btn green" id="btnRandomFlag">Random</button>
+            </div>
+
+            <div class="flag-card">
+              <div class="flag" id="flagBox" aria-label="Flag preview"></div>
+              <div class="flag-info">
+                <div class="flag-title" id="flagTitle">India</div>
+                <div class="muted" id="flagFact">The Ashoka Chakra has 24 spokes.</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <button class="btn" id="btnHostLine">Host intro line</button>
+              <span class="muted" id="hostLine"></span>
+            </div>
+          </div>
+
+          <div class="tile">
+            <h4>Episode-Style Segment</h4>
+            <ul>
+              <li><b>Opening:</b> “Hello, I’m Dr. Sheldon Cooper…”</li>
+              <li><b>Flag:</b> “Today’s flag is…”</li>
+              <li><b>Fact:</b> 1–2 quick points</li>
+              <li><b>Closing:</b> “Join us next time…”</li>
+            </ul>
+            <div class="mini-note">
+              Tip: You can add a “Subscribe” button and a fake episode list later.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="card section-block reveal" id="gallery">
+        <h2>Gallery</h2>
+        <p class="muted">Click any image to view larger.</p>
+
+        <div class="gallery">
+          <button class="imgbtn" data-full="sheldon1.jpg">
+            <img src="sheldon1.jpg" alt="Sheldon photo 1"
+                 onerror="this.src='data:image/svg+xml;charset=UTF-8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22280%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%2311182e%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23e5e7eb%22 font-size=%2220%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Place image in /images</text></svg>';">
+          </button>
+
+          <button class="imgbtn" data-full="sheldon2.jpg">
+            <img src="sheldon2.jpg" alt="Sheldon photo 2"
+                 onerror="this.src='data:image/svg+xml;charset=UTF-8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22280%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%2311182e%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23e5e7eb%22 font-size=%2220%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Place image in /images</text></svg>';">
+          </button>
+
+          <button class="imgbtn" data-full="funwithflags.jpg">
+            <img src="funwithflags.jpg" alt="Fun with Flags"
+                 onerror="this.src='data:image/svg+xml;charset=UTF-8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22280%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%2311182e%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23e5e7eb%22 font-size=%2220%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Place image in /images</text></svg>';">
+          </button>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <section class="footer muted">
+        Built with HTML + CSS + JS • Fan practice project
+      </section>
+    </main>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <img id="lightboxImg" alt="Preview"/>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">Bazinga!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
